@@ -3,6 +3,9 @@ import px2vw from 'postcss-px-to-viewport'
 import Routes from './config.router';
 export default defineConfig({
   routes: Routes,
+  history: {
+    type: "hash"
+  },
   metas:[
     {
       name: 'viewport',

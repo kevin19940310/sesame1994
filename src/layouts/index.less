@@ -6,6 +6,21 @@
   background-color: #fff;
   margin: 0 auto;
   .content{
-    height: calc(100vh - 125px);
+    box-sizing: border-box;
+    height: 100vh;
+    padding-bottom: 125px;
+    overflow-y: scroll;
+  }
+  .vague{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    height: 125px;
+    width: 100%;
+    z-index: 9;
+    background-color: #ccc;
+    opacity: 0.8;
+    filter: blur(10px);
   }
 }
