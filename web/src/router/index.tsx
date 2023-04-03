@@ -1,13 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
-// import Framework from './Framework';
+import Layout from './Layout';
 import Error from './Error';
 import Home from '@/pages/home';
 import About from '@/pages/about';
+import Record from '@/pages/record';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    // element: <Framework />,
+    element: <Layout />,
     errorElement: <Error />,
     children: [
       {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+      },
+      {
+        path: '/record/:id',
+        element: <Record />,
       },
     ],
   },
